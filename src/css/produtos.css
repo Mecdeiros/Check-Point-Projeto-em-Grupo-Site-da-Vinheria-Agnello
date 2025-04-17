@@ -116,6 +116,50 @@ header {
         font-family: "Montserrat";
       }
 
-      .imgVinho{
-        size: 24px;
+      .imgVinho img {
+        width: 303px;
+        height: 303px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+
       }
+.vinhoCasasilia h3{
+    font-family: "Montserrat";
+    display:flex;
+    text-align: center;
+}
+      .imgVinho2 img {
+        width: 150px;
+        height: 303px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+}
+
+
+.imgVinho3 img {
+  width: 150px;
+  height: 330px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+
+.imgVinho4 img {
+  width: 230px;
+  height: 303px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+
+.imgVinho5 img {
+    width: 170px;
+    height: 330px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+  }
+
+  .imgVinho6 img {
+    width: 225px;
+    height: 330px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+  }
