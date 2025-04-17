@@ -3,6 +3,7 @@
     src: url("src/fonts/Montserrat-Regular.ttf") format("truetype"), url("src/fonts/Montserrat-Semibold.ttf") format("truetype"), url("src/fonts/Montserrat-Bold.ttf") format("truetype"), url("src/fonts/Montserrat-Black.ttf") format("truetype"), url("src/fonts/Montserrat-ExtraBold.ttf") format("truetype"), url("src/fonts/Montserrat-Light.ttf") format("truetype"), url("src/fonts/Montserrat-Thin.ttf") format("truetype"), url("src/fonts/Montserrat-Medium.ttf") format("truetype"), url("src/fonts/Montserrat-ExtraLight.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+    
 }
 body{
 margin: 0;
@@ -105,77 +106,16 @@ header {
 
     }
 
-.hero-main {
-display: flex;
-width: 100%;
-min-height: 100vh;
-margin: 0 auto;
-padding: 0px 64px;
-flex-direction: row;
-align-items: center;
-gap:80px;
-background: var(--light-text-gray-1,  #FAFAFA);
-box-sizing: border-box;
-justify-content: center
-}
-    .hero-text h1{
-    width: 678px;
-    height: 248px;
-    display: flex;
-    color: var(--Color-Scheme-1-Text, #000);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 76px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    }
-    .hero-text p{
-        width: 625px;
-        height: 35px;
-        display: flex;
-        color: var(--Color-Scheme-1-Text, #000);
+    table {
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 150%; 
-    }
+      }
 
-.hero-image {
-    width: 691.381px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
+      main{
+        font-family: "Montserrat";
+      }
 
-.hero-image img{
-max-width: 100%;
-height: auto;
-}
-
-@media (max-width: 768px) {
-    .hero-main {
-      flex-direction: column;
-      padding: 64px 32px;
-      text-align: center;
-    }
-  
-    .hero-text h1, .hero-text p {
-      text-align: center;
-      width: 100%;
-    }
-  
-    .hero-image {
-      width: 100%;
-    }
-  }
-
-  .imgVinho{
-    display:flex;
-    height:auto;
-    width: 12px;
-  }
+      .imgVinho{
+        size: 24px;
+      }
