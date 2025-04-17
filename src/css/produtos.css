@@ -31,6 +31,27 @@ header {
     justify-content: space-between;
     }
 
+    .nav-contato:hover {
+        transform: scale(1.2);
+        transition: all .5s ease;
+    }
+
+
+    .nav-galeria:hover {
+        transform: scale(1.2);
+        transition: all .5s ease;
+    }
+
+    .nav-produtos:hover {
+      transform: scale(1.2);
+      transition: all .5s ease;
+  }
+
+  .nav-promoçoes:hover {
+    transform: scale(1.2);
+    transition: all .5s ease;
+}
+
 .hero-nav ul{
     display:flex;
     flex-direction: row;
@@ -165,8 +186,10 @@ header {
   }
 
   .textoEsquerda {
-    text-align: left;
+    text-align: center;
     background-color: darkred;
+    width: 100%;
+    height: 50px;
   }
 
   .catalogo {
@@ -179,8 +202,4 @@ header {
   .coluna-esquerda {
     max-width: 100%;
     text-align: center; 
-  }
-
-  .catalogo-vinhos {
-    
   }
