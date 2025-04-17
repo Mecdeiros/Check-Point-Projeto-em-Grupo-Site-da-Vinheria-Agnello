@@ -105,6 +105,27 @@ header {
 
     }
 
+    .nav-contato:hover {
+        transform: scale(1.2);
+        transition: all .5s ease;
+    }
+
+
+    .nav-galeria:hover {
+        transform: scale(1.2);
+        transition: all .5s ease;
+    }
+
+    .nav-produtos:hover {
+      transform: scale(1.2);
+      transition: all .5s ease;
+  }
+
+  .nav-promoçoes:hover {
+    transform: scale(1.2);
+    transition: all .5s ease;
+}
+
 .hero-main {
 display: flex;
 width: 100%;
