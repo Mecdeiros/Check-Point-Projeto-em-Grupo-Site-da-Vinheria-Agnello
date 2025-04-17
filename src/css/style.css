@@ -4,63 +4,172 @@
     font-weight: normal;
     font-style: normal;
 }
-header {
-    background: var(--light-text-gray-1, #FAFAFA);
-    display: flex;
-    width: 1440px;
-    height: 97px;
-    padding: 0px 64px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    position:sticky;
+body{
+margin: 0;
+padding: 0;
+width: 100%;
+overflow-x: hidden; 
+box-sizing: border-box;
 }
-.nav-produtos a {
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background: #FAFAFA;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+    .hero-content {
+     width: 100%;
+    max-width: 1440px;
+    padding: 0 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+.hero-nav ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+    
+
+
+.nav-produtos {
+    width: 189px;
+    display: flex ;
+    flex-direction: row;
+    }
+    .nav-produtos a {
+        color: var(--Color-Scheme-1-Text, #000);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        text-decoration: none;
+    }
+    
+.nav-galeria {
+    display: flex;
+    flex-direction: row;
     width: 189px;
     height: 36px;
-    position: flex 1 1 auto;
-    top: 2px;
-    color: var(--Color-Scheme-1-Text, #000);
-    text-align: center;
-    font-family: "Montserrat";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 36px */
+    right: -9px;
 }
+    .nav-galeria a {
+        color: var(--Color-Scheme-1-Text, #000);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        text-decoration: none;
+    }       
 
-main {
+.nav-promoçoes{
     display: flex;
-    height: 819px;
-    padding: 112px 64px;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    flex-shrink: 0;
-    align-self: stretch;
+    flex-direction: row;
+    width: 189px;
+    height: 36px;
+    top: 2px;
 }
+    .nav-promoçoes a {
+        color: var(--Color-Scheme-1-Text, #000);
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        text-decoration: none;
+    }
 
-h1 {
+.nav-contato {
+    display: flex;
+    flex-direction: row;
+    
+}
+    .nav-contato a {
+        color: var(--Color-Scheme-1-Text, #000);
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        text-decoration: none;
+
+    }
+
+.hero-main {
+display: flex;
+width: 100%;
+min-height: 100vh;
+margin: 0 auto;
+padding: 0px 64px;
+flex-direction: row;
+align-items: center;
+gap:80px;
+background: var(--light-text-gray-1,  #FAFAFA);
+box-sizing: border-box;
+justify-content: center
+}
+    .hero-text h1{
     width: 678px;
     height: 248px;
-    position: flex 1 1 auto;;
-    right: 39px;
-    top: 98px;
+    display: flex;
     color: var(--Color-Scheme-1-Text, #000);
     text-align: center;
-    font-family: "Montserrat";
+    font-family: Montserrat;
     font-size: 76px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%; /* 91.2px */
+    line-height: 120%;
+    }
+    .hero-text p{
+        width: 625px;
+        height: 35px;
+        display: flex;
+        color: var(--Color-Scheme-1-Text, #000);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%; 
+    }
+
+.hero-image {
+    width: 691.381px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-p {
-    width: 625px;
-    height: 35px;
-    position: flex 1 1 auto;;
-    right: 46px;
-    top: 390px;
-    
+.hero-image img{
+max-width: 100%;
+height: auto;
 }
+
+@media (max-width: 768px) {
+    .hero-main {
+      flex-direction: column;
+      padding: 64px 32px;
+      text-align: center;
+    }
+  
+    .hero-text h1, .hero-text p {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hero-image {
+      width: 100%;
+    }
+  }
