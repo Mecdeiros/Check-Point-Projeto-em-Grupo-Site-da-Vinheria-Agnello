@@ -14,7 +14,7 @@ box-sizing: border-box;
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0;
     background: #FAFAFA;
     position: sticky;
@@ -33,11 +33,24 @@ header {
 .hero-nav ul{
     display:flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    gap:32px;
     list-style-type: none;
-}
-    
+    margin: 0;
+    padding: 0;
+    }
 
+    
+.hero-logo {
+    width: 130px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.hero-logo img {
+    width: 100%;
+    height: auto;
+}
 
 .nav-produtos {
     width: 189px;
@@ -157,13 +170,23 @@ justify-content: center
         display: flex;
         color: var(--Color-Scheme-1-Text, #000);
         text-align: center;
-        font-family: Montserrat;
+        font-family: "Montserrat";
         font-size: 24px;
         font-style: normal;
         font-weight: 300;
         line-height: 150%; 
     }
-
+    .hero-text a{
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: 1px solid #333;
+        background-color: transparent;
+        color: #333;
+        font-size: 16px;
+        font-family: "Montserrat";
+        border-radius: 4px;
+        text-decoration: none;
+    }
 .hero-image {
     width: 691.381px;
     height: auto;
@@ -178,25 +201,138 @@ max-width: 100%;
 height: auto;
 }
 
-@media (max-width: 768px) {
-    .hero-main {
-      flex-direction: column;
-      padding: 64px 32px;
-      text-align: center;
-    }
-  
-    .hero-text h1, .hero-text p {
-      text-align: center;
-      width: 100%;
-    }
-  
-    .hero-image {
-      width: 100%;
-    }
-  }
 
-  .imgVinho{
+.previa-produtos {
+    padding: 60px 40px;
+    background-color: #FAFAFA;
+    text-align: center;
+  }
+  
+  .previa-texto h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  .lista-vinhos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 400px;
+    padding: 40px 20px;
+  }
+  
+  .vinho {
+    width: 200px;
+    text-align: center;
+    flex-shrink: 0;
     display:flex;
-    height:auto;
-    width: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.vinho img {
+    height: 500px;
+    object-fit: contain;
+    margin-bottom: 0;
+}
+  
+  .vinho h2 {
+    font-size: 18px;
+    margin-top: 16px;
+    font-weight: 700;
+  }
+  
+  .vinho p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+   .vinho a {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+    font-family: "Montserrat";
+    border-radius: 4px;
+    text-decoration: none;
+ }
+
+ 
+ 
+ 
+ 
+ 
+ .hero-footer {
+    background-color: #FAFAFA;
+    padding: 40px;
+    font-family: 'Montserrat';
+    color: #000;
+  }
+  
+  .hero-footertop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .footer-mensagem {
+    flex: 1 1 300px;
+  }
+  
+  .footer-mensagem .footer-logo {
+    width: 130px;
+    height: auto;
+    display: flex;
+    align-items: center
+  }
+  
+  
+  .coluna-footer {
+    display: flex;
+    flex: 2;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .coluna {
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .coluna h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .coluna a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+  }
+ 
+  
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .legal-terms {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .legal-terms a {
+    color: #555;
+    text-decoration: none;
   }
