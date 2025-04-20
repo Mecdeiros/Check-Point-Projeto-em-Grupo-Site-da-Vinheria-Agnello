@@ -21,32 +21,42 @@ header {
     top: 0;
     z-index: 10;
 }
-    .hero-content {
-     width: 100%;
-    max-width: 1440px;
-    padding: 0 64px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    }
 
-.hero-nav ul{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    gap:32px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    }
+.hero-content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
 
-    
+.hero-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-45%); /* antes era -50% */
+}
+
+
+.hero-nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .hero-logo {
     width: 130px;
     height: auto;
     display: flex;
     align-items: center;
 }
+
+
+ 
 .hero-logo img {
     width: 100%;
     height: auto;
