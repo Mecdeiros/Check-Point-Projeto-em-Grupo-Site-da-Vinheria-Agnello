@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    background: #FAFAFA;
+    background: #ffffff;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -79,7 +79,11 @@ header {
 
 iframe {
     width: 700px;
+
     height: 400px; 
+
+    height: 400px;
+
     display: block; 
     margin: 20px auto; 
 }
@@ -178,6 +182,7 @@ iframe {
     color: var(--Color-Scheme-1-Text, #000);
     text-align: center;
     font-family: "Montserrat";
+    padding-left: 128px;
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
@@ -247,7 +252,7 @@ iframe {
 }
 
 .hero-footer {
-    background-color: #FAFAFA;
+    background-color: #ffffff;
     padding: 40px;
     font-family: 'Montserrat';
     color: #000;
