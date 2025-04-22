@@ -41,7 +41,12 @@ header {
   padding: 0;
   }
 
-  
+  .hero-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-45%);
+}
+
 .hero-logo {
   width: 130px;
   height: auto;
