@@ -79,7 +79,11 @@ header {
 
 iframe {
     width: 700px;
+
+    height: 400px; 
+
     height: 400px;
+
     display: block; 
     margin: 20px auto; 
 }
@@ -183,6 +187,7 @@ iframe {
     font-style: normal;
     font-weight: 300;
     line-height: 150%;
+    transform: translateX(8%);
 }
 
 .hero-text a {
@@ -313,3 +318,7 @@ iframe {
     color: #555;
     text-decoration: none;
 }
+
+
+
+  
