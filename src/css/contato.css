@@ -1,18 +1,21 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url("src/fonts/Montserrat-Regular.ttf") format("truetype"), url("src/fonts/Montserrat-Semibold.ttf") format("truetype"), url("src/fonts/Montserrat-Bold.ttf") format("truetype"), url("src/fonts/Montserrat-Black.ttf") format("truetype"), url("src/fonts/Montserrat-ExtraBold.ttf") format("truetype"), url("src/fonts/Montserrat-Light.ttf") format("truetype"), url("src/fonts/Montserrat-Thin.ttf") format("truetype"), url("src/fonts/Montserrat-Medium.ttf") format("truetype"), url("src/fonts/Montserrat-ExtraLight.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-body{
-margin: 0;
-padding: 0;
-width: 100%;
-overflow-x: hidden; 
-box-sizing: border-box;
+  font-family: "Montserrat";
+  src: url("src/fonts/Montserrat-Regular.ttf") format("truetype"), url("src/fonts/Montserrat-Semibold.ttf") format("truetype"), url("src/fonts/Montserrat-Bold.ttf") format("truetype"), url("src/fonts/Montserrat-Black.ttf") format("truetype"), url("src/fonts/Montserrat-ExtraBold.ttf") format("truetype"), url("src/fonts/Montserrat-Light.ttf") format("truetype"), url("src/fonts/Montserrat-Thin.ttf") format("truetype"), url("src/fonts/Montserrat-Medium.ttf") format("truetype"), url("src/fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-header {
+ *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background-color: #FAFAFA;
+    font-family: "Montserrat";
+    color: #000;
+  }
+
+  header {
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -149,135 +152,117 @@ header {
     transition: all .5s ease;
 }
 
-.hero-main {
-display: flex;
-width: 100%;
-min-height: 100vh;
-margin: 0 auto;
-padding: 0px 64px;
-flex-direction: row;
-align-items: center;
-gap:80px;
-background: var(--light-text-gray-1,  #FAFAFA);
-box-sizing: border-box;
-justify-content: center
-}
-    .hero-text h1{
-    width: 678px;
-    height: 248px;
-    display: flex;
-    color: var(--Color-Scheme-1-Text, #000);
-    text-align: center;
-    font-family: "Montserrat";
-    font-size: 76px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    }
-    .hero-text p{
-        width: 625px;
-        height: 35px;
-        display: flex;
-        color: var(--Color-Scheme-1-Text, #000);
-        text-align: center;
-        font-family: "Montserrat";
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 150%; 
-    }
-    .hero-text a{
-        margin-top: 10px;
-        padding: 10px 20px;
-        border: 1px solid #333;
-        background-color: transparent;
-        color: #333;
-        font-size: 16px;
-        font-family: "Montserrat";
-        border-radius: 4px;
-        text-decoration: none;
-    }
-.hero-image {
-    width: 691.381px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-image img{
-max-width: 100%;
-height: auto;
-}
 
 
-.previa-produtos {
-    padding: 60px 40px;
-    background-color: #FAFAFA;
-    text-align: center;
-  }
-  
-  .previa-texto h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-  }
-  
-  .lista-vinhos {
+
+
+
+  main {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 400px;
-    padding: 40px 20px;
-  }
-  
-  .vinho {
-    width: 200px;
-    text-align: center;
-    flex-shrink: 0;
-    display:flex;
     flex-direction: column;
-    align-items: center;
+    gap: 40px;
+    min-height: 100vh;
+    align-items: flex-start;
   }
-  
-.vinho img {
-    height: 500px;
-    object-fit: contain;
-    margin-bottom: 0;
-}
-  
-  .vinho h2 {
-    font-size: 18px;
-    margin-top: 16px;
-    font-weight: 700;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 600px;
   }
-  
-  .vinho p {
+  form {
+    width: 100%;
+    max-width: 576px;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  p {
     font-size: 14px;
-    color: #666;
-    margin: 0;
+    margin-bottom: 24px;
   }
-   .vinho a {
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: 1px solid #333;
-    background-color: transparent;
-    color: #333;
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    border: 1px solid #4a4a4a; 
+    padding:  8px 12px;
     font-size: 16px;
-    font-family: "Montserrat";
-    border-radius: 4px;
-    text-decoration: none;
- }
+    line-height:  20px ;
+    font-family: inherit;
+    resize: vertical;
+    outline-offset: 2px;
+    outline-color: transparent;
+    transition: outline-color 0.2s ease;
+    margin-bottom: 16px;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline-color: #000;
+    outline-style: solid;
+    outline-width: 1px;
+  }
+  textarea {
+    min-height: 120px;
+  }
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 12px;
+  }
+  .checkbox-container input[type="checkbox"] {
+    width: 16px;
+    height: 1rem;
+    border: 1px solid #4a4a4a;
+    margin: 0;
+    cursor: pointer;
+    accent-color: #000;
+  }
+  .checkbox-container label {
+    margin-left: 8px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+  }
 
- 
- 
- 
- 
- 
- .hero-footer {
+  @media (min-width: 768px) {
+    main {
+      flex-direction: row;
+      align-items: center;
+    }
+    img {
+      width: 50%;
+      max-width: none;
+    }
+    form {
+      width: 50%;
+    }
+  }
+
+  .hero-footer {
     background-color: #ffffff;
     padding: 40px;
     font-family: 'Montserrat';
