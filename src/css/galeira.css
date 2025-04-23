@@ -1,299 +1,122 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    background: #ffffff;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.hero-content {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 64px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.hero-nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-45%);
-}
-
-.hero-nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 32px;
-    list-style-type: none;
+* {
     margin: 0;
     padding: 0;
-}
-
-.hero-logo {
-    width: 130px;
-    height: auto;
-    display: flex;
-    align-items: center;
-}
-
-.hero-logo img {
-    width: 100%;
-    height: auto;
-}
-
-.nav-produtos {
-    width: 189px;
-    display: flex;
-    flex-direction: row;
-}
-
-.nav-produtos a {
-    color: var(--Color-Scheme-1-Text, #000);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    text-decoration: none;
-}
-
-iframe {
-    width: 700px;
-
-    height: 400px; 
-
-    height: 400px;
-
-    display: block; 
-    margin: 20px auto; 
-}
-
-
-.nav-galeria {
-    display: flex;
-    flex-direction: row;
-    width: 189px;
-    height: 36px;
-    right: -9px;
-}
-
-.nav-galeria a {
-    color: var(--Color-Scheme-1-Text, #000);
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    text-decoration: none;
-}
-
-.nav-promoçoes {
-    display: flex;
-    flex-direction: row;
-    width: 189px;
-    height: 36px;
-    top: 2px;
-}
-
-.nav-promoçoes a {
-    color: var(--Color-Scheme-1-Text, #000);
-    font-family: "Montserrat";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    text-decoration: none;
-}
-
-.nav-contato {
-    display: flex;
-    flex-direction: row;
-}
-
-.nav-contato a {
-    color: var(--Color-Scheme-1-Text, #000);
-    font-family: "Montserrat";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    text-decoration: none;
-}
-
-.nav-contato:hover,
-.nav-galeria:hover,
-.nav-produtos:hover,
-.nav-promoçoes:hover {
-    transform: scale(1.2);
-    transition: all .5s ease;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    padding: 20px;
     background-color: #fafafa;
     color: #222;
-  }
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+p {
+    font-weight: 300;
+    color: #333;
+}
+
+.sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.sobre-nos .texto {
+    max-width: 500px;
+}
+
+.sobre-nos .imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.video h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 10px;
+    border: none;
+}
+  
   .galeria {
     gap: 30px;
     padding: 40px 0;
   }
   .galeria img {
+    width: 300px;
+    height: auto;
     border: 4px solid #ddd;
   }
-  h1, h2 {
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  
+  .hero-footer {
+    background-color: #fff;
+    padding: 40px;
+    color: #000;
   }
-  h1, h2, h3 {
-    font-weight: 700;
+  .hero-footertop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .footer-mensagem {
+    flex: 1 1 300px;
+  }
+  .footer-mensagem .footer-logo {
+    width: 130px;
+    height: auto;
+  }
+  .coluna-footer {
+    display: flex;
+    flex: 2;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .coluna {
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .coluna h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .coluna a, .legal-terms a {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #555;
+  }
+  .legal-terms {
+    display: flex;
+    gap: 20px;
   }
   
-  p {
-    font-weight: 300;
-    color: #333;
-  }
-  .sobre-nos {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 40px;
-      padding: 50px;
-      background-color: #fff;
-    }
-    
-    .sobre-nos .texto {
-      flex: 1;
-      min-width: 300px;
-    }
-    
-    .sobre-nos .texto h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    
-    .sobre-nos .texto p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    
-    .sobre-nos .imagem {
-      flex: 1;
-      min-width: 300px;
-    }
-    
-    .sobre-nos .imagem img {
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    
-    .video {
-      text-align: center;
-      padding: 50px;
-      background-color: #f9f9f9;
-    }
-    
-    .video h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    
-    .video video {
-      max-width: 90%;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 */
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      background: #000;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    .hero-footer {
-        background-color: #ffffff;
-        padding: 40px;
-        font-family: 'Montserrat';
-        color: #000;
-    }
-    
-    .hero-footertop {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 40px;
-    }
-    
-    .footer-mensagem {
-        flex: 1 1 300px;
-    }
-    
-    .footer-mensagem .footer-logo {
-        width: 130px;
-        height: auto;
-        display: flex;
-        align-items: center;
-    }
-    
-    .coluna-footer {
-        display: flex;
-        flex: 2;
-        gap: 40px;
-        flex-wrap: wrap;
-    }
-    
-    .coluna {
-        min-width: 120px;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-    
-    .coluna h4 {
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    
-    .coluna a {
-        color: #000;
-        text-decoration: none;
-        font-size: 14px;
-    }
-    
-    .copyright {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        font-size: 14px;
-        color: #555;
-    }
-    
-    .legal-terms {
-        display: flex;
-        gap: 20px;
-    }
-    
-    .legal-terms a {
-        color: #555;
-        text-decoration: none;
-    }
-    
-    
-    
-      
