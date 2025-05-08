@@ -1,386 +1,393 @@
 * {
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    color: #333;
-    background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  background-color: #fff;
 }
 
 @font-face {
-    font-family: "Montserrat";
-   
-    src: url("../fonts/Montserrat-Regular.ttf") format("truetype"),
-         url("../fonts/Montserrat-Semibold.ttf") format("truetype"),
-         url("../fonts/Montserrat-Bold.ttf") format("truetype"),
-         url("../fonts/Montserrat-Black.ttf") format("truetype"),
-         url("../fonts/Montserrat-ExtraBold.ttf") format("truetype"),
-         url("../fonts/Montserrat-Light.ttf") format("truetype"),
-         url("../fonts/Montserrat-Thin.ttf") format("truetype"),
-         url("../fonts/Montserrat-Medium.ttf") format("truetype"),
-         url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
-    font-weight: normal;
+  font-family: "Montserrat";
+
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype"),
+       url("../fonts/Montserrat-Semibold.ttf") format("truetype"),
+       url("../fonts/Montserrat-Bold.ttf") format("truetype"),
+       url("../fonts/Montserrat-Black.ttf") format("truetype"),
+       url("../fonts/Montserrat-ExtraBold.ttf") format("truetype"),
+       url("../fonts/Montserrat-Light.ttf") format("truetype"),
+       url("../fonts/Montserrat-Thin.ttf") format("truetype"),
+       url("../fonts/Montserrat-Medium.ttf") format("truetype"),
+       url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: normal; 
 }
 
 header {
-    padding: 20px 0;
-    background: #ffffff;
-    position: sticky;
-    top: 0;
-    border-bottom: 1px solid #eee;
-   
+  padding: 20px 100;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #eee;
+  
 }
 
 .hero-header { 
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 64px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 64px;
 }
 
-.hero-content {
-  text-align: justify; 
+.hero-content { 
+text-align: middle;
 }
 .hero-content::after { 
-    content: '';
-    display: inline-block;
-    width: 100%;
+  content: '';
+  display: inline-block;
+  width: 100%;
 }
 
 .hero-logo {
-    width: 150px; 
-    height: auto;
-    display: inline-block; 
-    vertical-align: middle;
+  width: 100px; 
+  height: auto;
+  display: inline-block; 
+  vertical-align: middle;
+  padding: 0 10px;
 }
 
 .hero-logo img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block; 
+  margin-left: 1200px; 
 }
 
 .hero-nav {
-    display: inline-block; 
-    vertical-align: middle;
-    text-align: right; 
+  display: inline-block; 
+  vertical-align: middle;
+  text-align: right; 
 }
 
 .hero-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: inline-block; 
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: inline-block; 
 }
 
 .hero-nav ul li {
-    display: inline-block;
-    margin-left: 32px; 
+  display: inline-block;
+  margin-left: 32px; 
 }
 .hero-nav ul li:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .nav-produtos a, .nav-galeria a, .nav-promoçoes a, .nav-contato a {
-    color: #000;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px; 
-    font-weight: 500;
-    line-height: 1.5;
-    text-decoration: none;
-    padding: 10px 0; 
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  padding: 10px 0; 
 }
 
 
 .nav-produtos, .nav-galeria, .nav-promoçoes, .nav-contato {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 
 .nav-contato:hover, .nav-galeria:hover, .nav-produtos:hover, .nav-promoçoes:hover {
-    transform: scale(1.1); 
-    transition: transform 0.3s ease;
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+}
+
+.nav-contato a:focus, .nav-galeria a:focus, .nav-produtos a:focus, .nav-promoçoes a:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
 }
 
 
 .hero-main { 
-    width: 100%;
-    padding: 80px 64px;
-    background: #FAFAFA;
-    text-align: center; 
+  width: 100%;
+  padding: 80px 64px;
+  background: #FAFAFA;
+  text-align: center; 
 }
 
 .hero-text {
-    display: inline-block;
-    width: 48%; 
-    vertical-align: middle;
-    text-align: left; 
-    margin-right: 4%;
+  display: inline-block;
+  width: 48%; 
+  vertical-align: middle;
+  text-align: left; 
+  margin-right: 4%; 
 }
 
 .hero-text h1{
-    color: #000;
-    font-family: "Montserrat", sans-serif;
-    font-size: 56px; 
-    font-weight: 700;
-    line-height: 1.2;
-    margin-top: 0;
-    margin-bottom: 20px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .hero-text p{
-    color: #333;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 30px;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
 }
 
 .hero-text a{ 
-    display: inline-block; 
-    padding: 12px 25px;
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #333;
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block; 
+  padding: 12px 25px;
+  border: 1px solid #333;
+  background-color: #fff; 
+  color: #333;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .hero-text a:hover{
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
 }
 
 .hero-image {
-    width: 48%; 
-    display: inline-block;
-    vertical-align: middle;
+  width: 48%; 
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .hero-image img{
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 
-.previa-produtos {
-    padding: 80px 40px;
-    background-color: #FFFFFF; 
-    text-align: center;
+.previa-produtos { 
+  padding: 80px 40px;
+  background-color: #FFFFFF; 
+  text-align: center;
 }
-  
+
 .previa-texto h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 42px;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 60px;
-    color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 60px;
+  color: #333;
 }
-  
+
 .lista-vinhos {
-    padding: 0;
-    text-align: center; 
-    font-size: 0; 
+  padding: 0;
+  text-align: center; 
+  font-size: 0; 
 }
-  
-.vinho:nth-child(2n+1) { 
-    background-color: #f9f9f9;
+
+.vinho:nth-child(2n+1) {
   background-color: #f9f9f9;
 }
 
 .vinho {
-    width: 30%; 
-    display: inline-block;
-    vertical-align: top; 
-    text-align: center;
-    margin: 0 1.5% 30px 1.5%; 
-    padding: 20px;
-    background-color: #fff; 
-    border: 1px solid #eee;
-    border-radius: 8px;
-    font-size: 16px; 
+  width: 30%; 
+  display: inline-block;
+  vertical-align: top; 
+  text-align: center;
+  margin: 0 1.5% 30px 1.5%; 
+  padding: 20px;
+  background-color: #fff; 
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 16px; 
 }
-  
+
 .vinho img {
-    width: auto; 
-    max-width: 80%; 
-    height: 300px; 
-    object-fit: contain;
-    margin-bottom: 20px;
-    display: block; 
-    margin-right: auto;
+  width: auto; 
+  max-width: 80%; 
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
 }
-  
+
 .vinho h2 {
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-weight: 600;
-    color: #333;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
 }
-  
+
 .vinho p {
-    font-size: 16px;
-    color: #666;
-    margin: 0 0 20px 0;
-    line-height: 1.6;
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
 }
 
 .vinho a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: 1px solid #333;
-    background-color: transparent;
-    color: #333;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background-color: transparent;
+  color: #333;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .vinho a:hover {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
 }
- 
+
 
 .hero-footer {
-    background-color: #ffffff;
-    padding: 60px 64px;
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    border-top: 1px solid #eee;
+  background-color: #ffffff;
+  padding: 60px 64px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  border-top: 1px solid #eee;
 }
-  
+
 .hero-footertop { 
-    margin-bottom: 40px;
-    text-align: justify;
+  margin-bottom: 40px;
+  text-align: justify;
 }
 .hero-footertop::after { 
-    content: '';
-    display: inline-block;
-    width: 100%;
+  content: '';
+  display: inline-block;
+  width: 100%;
 }
-  
+
 .footer-mensagem {
-    display: inline-block;
-    vertical-align: top;
-    width: 30%; 
-    margin-right: 5%; 
-    text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%; 
+  margin-right: 5%; 
+  text-align: left;
 }
-  
+
 .footer-mensagem .footer-logo {
-    width: 130px;
-    height: auto;
-    margin-bottom: 20px;
+  width: 130px;
+  height: auto;
+  margin-bottom: 20px;
 }
 .footer-mensagem .footer-logo img {
-    display: block;
+  display: block;
 }
-  
+
 .footer-mensagem p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
 }
 
 .footer-mensagem small {
-    font-size: 12px;
-    color: #777;
-    display: block;
+  font-size: 12px;
+  color: #777;
+  display: block;
 }
-  
+
 .coluna-footer { 
-    display: inline-block;
-    vertical-align: top;
-    width: 65%; 
-    text-align: left; 
-    font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 65%; 
+  text-align: left; 
+  font-size: 0; 
 }
-  
+
 .coluna {
-    width: 31%; 
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 3.5%; 
-    margin-bottom: 20px;
-    font-size: 14px; 
-    text-align: left;
+  width: 31%; 
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3.5%; 
+  margin-bottom: 20px;
+  font-size: 14px; 
+  text-align: left;
 }
-.coluna:last-child {
-    margin-right: 0;
+.coluna:nth-child(2) {
+  margin-right: 0;
 }
-  
+
 .coluna h4 {
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
 }
-  
+
 .coluna a {
-    color: #555;
-    text-decoration: none;
-    font-size: 14px;
-    display: block;
-    margin-bottom: 8px;
-    transition: color 0.3s ease;
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
 }
 .coluna a:hover {
-    color: #007bff; 
+  color: #007bff;/
 }
- 
+
 .copyright { 
-    font-size: 0; 
-    color: #555;
-    padding-top: 30px;
-    border-top: 1px solid #eee;
-    text-align: justify; 
+  font-size: 0; 
+  color: #555;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+  text-align: justify; 
 }
-.copyright::after {
-    content: '';
-    width: 100%;
-    display: inline-block;
+.copyright::after { 
+  content: '';
+  width: 100%;
+  display: inline-block;
 }
-  
-.copyright p {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 14px; 
-    margin: 0;
+
+.copyright p { 
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px; 
+  margin: 0;
 }
-  
+
 .legal-terms { 
-    display: inline-block;
-    vertical-align: middle;
-    text-align: right; 
-    font-size: 14px; 
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right; 
+  font-size: 14px; 
 }
-  
+
 .legal-terms a {
-    color: #555;
-    text-decoration: none;
-    margin-left: 20px; 
-    transition: color 0.3s ease;
+  color: #555;
+  text-decoration: none;
+  margin-left: 20px; 
+  transition: color 0.3s ease;
 }
-.legal-terms a:first-child {
-    margin-left: 0;
+.legal-terms a:nth-child(1) {
+  margin-left: 0;
 }
 .legal-terms a:hover {
-    color: #007bff;
+  color: #007bff;
 }
 
