@@ -27,7 +27,7 @@ body {
 }
 
 header {
-  padding: 20px 0;
+  padding: 20px 100;
   background: #ffffff;
   position: sticky;
   top: 0;
@@ -42,7 +42,7 @@ header {
 }
 
 .hero-content { 
-text-align: justify;
+text-align: middle;
 }
 .hero-content::after { 
   content: '';
@@ -51,16 +51,18 @@ text-align: justify;
 }
 
 .hero-logo {
-  width: 150px; 
+  width: 100px; 
   height: auto;
   display: inline-block; 
   vertical-align: middle;
+  padding: 0 10px;
 }
 
 .hero-logo img {
   width: 100%;
   height: auto;
   display: block; 
+  margin-left: 1200px; 
 }
 
 .hero-nav {
@@ -106,7 +108,7 @@ display: inline-block;
 }
 
 .nav-contato a:focus, .nav-galeria a:focus, .nav-produtos a:focus, .nav-promoçoes a:focus {
-  outline: 2px solid #007bff;
+  outline: 2px solid #000000;
   outline-offset: 2px;
 }
 
