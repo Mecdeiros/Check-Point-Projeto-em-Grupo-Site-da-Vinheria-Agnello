@@ -13,7 +13,7 @@ body {
 
 @font-face {
   font-family: "Montserrat";
- 
+
   src: url("../fonts/Montserrat-Regular.ttf") format("truetype"),
        url("../fonts/Montserrat-Semibold.ttf") format("truetype"),
        url("../fonts/Montserrat-Bold.ttf") format("truetype"),
@@ -24,16 +24,15 @@ body {
        url("../fonts/Montserrat-Medium.ttf") format("truetype"),
        url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
   font-weight: normal; 
-  font-style: normal;
 }
 
 header {
-  padding: 20px 0;
+  padding: 20px 100;
   background: #ffffff;
   position: sticky;
   top: 0;
   border-bottom: 1px solid #eee;
-
+  
 }
 
 .hero-header { 
@@ -43,7 +42,7 @@ header {
 }
 
 .hero-content { 
-text-align: justify; 
+text-align: middle;
 }
 .hero-content::after { 
   content: '';
@@ -52,16 +51,19 @@ text-align: justify;
 }
 
 .hero-logo {
-  width: 150px; 
+  width: 100px; 
   height: auto;
   display: inline-block; 
   vertical-align: middle;
+  padding: 0 10px;
 }
 
 .hero-logo img {
   width: 100%;
   height: auto;
-  display: block;
+  display: block; 
+  margin-left: 1200px; 
+}
 
 .hero-nav {
   display: inline-block; 
@@ -87,7 +89,7 @@ display: inline-block;
 .nav-produtos a, .nav-galeria a, .nav-promoçoes a, .nav-contato a {
   color: #000;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
   text-decoration: none;
@@ -103,6 +105,11 @@ display: inline-block;
 .nav-contato:hover, .nav-galeria:hover, .nav-produtos:hover, .nav-promoçoes:hover {
   transform: scale(1.1); 
   transition: transform 0.3s ease;
+}
+
+.nav-contato a:focus, .nav-galeria a:focus, .nav-produtos a:focus, .nav-promoçoes a:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
 }
 
     table {
@@ -315,4 +322,3 @@ display: inline-block;
     color: #007bff;
 }
 
-}
