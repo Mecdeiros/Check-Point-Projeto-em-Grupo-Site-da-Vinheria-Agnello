@@ -1,3 +1,5 @@
+@import url(efeitos.css);
+
 * {
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
@@ -119,9 +121,13 @@
     padding: 0px 64px;
     align-items: center;
     gap: 80px;
-    background: var(--light-text-gray-1, #FAFAFA);
+    background: #FAFAFA;
     box-sizing: border-box;
-    justify-content: center;
+    justify-content: center;   
+    text-align: center; 
+    /*/margin-right: auto !important;
+    margin-right: auto !important;
+     */
 }
 
 .hero-text h1 {
@@ -161,6 +167,7 @@
     border-radius: 4px;
     text-decoration: none;
 }
+
 
 .hero-image {
     width: 691.381px;
