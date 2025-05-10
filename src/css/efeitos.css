@@ -19,6 +19,7 @@ site quando ela aparece pela primeira vez ou é recarregado*/
 
 /* Adiciona uma animação que será usada no before para criar uma leve transição 
 no novo ícone criado acima do título (h1) da página*/
+
   @keyframes slidein {
     from {
       transform: translateX(-100%);
@@ -39,8 +40,10 @@ no novo ícone criado acima do título (h1) da página*/
     margin: 0 auto 20px;
     animation: slidein 1.2s ease-in-out;
   }
+
 /* Adiciona uma linha que aparecerá depois que o usuário passar o mouse sobre o 
 subtitulo da página */ 
+
 .hero-text p::after {
     content: "";
     display: block;
