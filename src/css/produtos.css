@@ -117,39 +117,30 @@ display: inline-block;
       }
 
       .imgVinho img {
-        width: 303px;
-        height: 300px;
+        width: 280px;
+        height: 250px;
         aspect-ratio: 1/1;
 
       }
        
-.coluna-esquerda:hover::after {
-  content: '';
-  position: absolute;
-  top: 340px; left: 21.4cm;
-  width: 35%; height: 10%;
-  border-radius: 6px;
-  background: rgba(80, 12, 12, 0.747);
-  opacity: 5;
-  transition: opacity 1s ease;
+
 
   
-}
     
 .vinhoCasasilia h3{
     font-family: "Montserrat";
     text-align: center;
 }
       .imgVinho2 img {
-        width: 150px;
-        height: 303px;
+        width: 130px;
+        height: 250px;
         aspect-ratio: 1/1;
 }
 
 
 .imgVinho3 img {
-    width: 150px;
-    height: 300px;
+    width: 130px;
+    height: 270px;
     aspect-ratio: 1/1;
 
 }
@@ -173,8 +164,6 @@ display: inline-block;
   }
 
   .textoEsquerda {
-    text-align: center;
-
     width: 100%;
     height: 50px;
   }
@@ -199,37 +188,6 @@ display: inline-block;
     font-family: "Montserrat";
     border-radius: 4px;
     text-decoration: none;
-  }
-
-  .imgVinho a:hover{
-    background-color: #333;
-    color: #ffffff;
-    
-  }
-
-  .imgVinho2 a:hover{
-    background-color: #333;
-    color: #ffffff;
-  }
-
-  .imgVinho3 a:hover{
-    background-color: #333;
-    color: #ffffff;
-  }
-
-  .imgVinho4 a:hover{
-    background-color: #333;
-    color: #ffffff;
-  }
-
-  .imgVinho5 a:hover{
-    background-color: #333;
-    color: #ffffff;
-  }
-
-  .imgVinho6 a:hover{
-    background-color: #333;
-    color: #ffffff;
   }
 
 
@@ -362,3 +320,4 @@ display: inline-block;
 }
 
 
+  
