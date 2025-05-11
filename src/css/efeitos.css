@@ -92,3 +92,16 @@ subtitulo da página */
     background-color: #333;
     color: #ffffff;
   }
+
+  /* GALEIRA */
+
+  .container img:hover {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    transform: rotate(5deg);
+    transform: rotateX(25deg);
+    transition: transform 0.3s ease;;
+  }
+

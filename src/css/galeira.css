@@ -1,3 +1,5 @@
+@import 'efeitos.css';
+
 * {
     margin: 0;
     padding: 0;
@@ -26,19 +28,19 @@ p {
     align-items: center;
     gap: 40px;
     padding: 40px 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .sobre-nos .texto {
     max-width: 500px;
 }
 
-.sobre-nos .imagem img {
+.sobre-nos .imagem img:hover {
     max-width: 100%;
-    height: auto;
+    height: 15cm;
     border-radius: 10px;
-}
-
+  }
+  
 .video {
     text-align: center;
     padding: 40px 20px;
@@ -62,7 +64,7 @@ p {
     padding: 40px 0;
   }
   .galeria img {
-    width: 300px;
+    width: 500px;
     height: auto;
     border: 4px solid #ddd;
   }
@@ -77,7 +79,7 @@ p {
   
 .hero-footertop { 
     margin-bottom: 40px;
-    text-align: justify;
+    text-align: center;
 }
 .hero-footertop::after { 
     content: '';
@@ -90,7 +92,7 @@ p {
     vertical-align: top;
     width: 30%; 
     margin-right: 5%;
-    text-align: left;
+    text-align: center;
 }
   
 .footer-mensagem .footer-logo {
@@ -119,7 +121,7 @@ p {
     display: inline-block;
     vertical-align: top;
     width: 65%; 
-    text-align: left; 
+    text-align: center; 
     font-size: 0;
   
 .coluna {
@@ -129,7 +131,7 @@ p {
     margin-right: 3.5%; 
     margin-bottom: 20px;
     font-size: 14px;
-    text-align: left;
+    text-align: center;
 }
 .coluna:last-child {
     margin-right: 0;
@@ -160,7 +162,7 @@ p {
     color: #555;
     padding-top: 30px;
     border-top: 1px solid #eee;
-    text-align: justify;
+    text-align: center;
 }
 .copyright::after { 
     content: '';
