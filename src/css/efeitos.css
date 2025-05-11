@@ -58,3 +58,37 @@ subtitulo da página */
     width: 100%;
 }
   
+/* PRODUTOS */
+
+  
+
+ .imgVinho a:hover{
+    background-color: #333;
+    color: #ffffff;
+    
+  }
+
+  .imgVinho2 a:hover{
+    background-color: #333;
+    color: #ffffff;
+  }
+
+  .imgVinho3 a:hover{
+    background-color: #333;
+    color: #ffffff;
+  }
+
+  .imgVinho4 a:hover{
+    background-color: #333;
+    color: #ffffff;
+  }
+
+  .imgVinho5 a:hover{
+    background-color: #333;
+    color: #ffffff;
+  }
+
+  .imgVinho6 a:hover{
+    background-color: #333;
+    color: #ffffff;
+  }
