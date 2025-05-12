@@ -17,6 +17,7 @@ Com o impacto da pandemia sobre as vendas físicas, o Sr. Agnello encomendou a c
 - **Otavio Magno da Silva** – RM: 566149
 - **Mikael de Albuquerque Santana** – RM: 566507
 - **Victor Pucci Ferreira** – RM: 561736
+- **Murilo Henrique Vieira Cruz** – RM: 563743
 
 ---
 
