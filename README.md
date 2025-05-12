@@ -55,6 +55,9 @@ O site é composto por cinco páginas principais, todas com um layout consistent
 📎 **Repositório no GitHub:**  
 [https://github.com/Mecdeiros/Check-Point-Projeto-em-Grupo-Site-da-Vinheria-Agnello](https://github.com/Mecdeiros/Check-Point-Projeto-em-Grupo-Site-da-Vinheria-Agnello)
 
+ **Site publicado (GitHub Pages):** 
+[https://mecdeiros.github.io/Check-Point-Projeto-em-Grupo-Site-da-Vinheria-Agnello/](https://mecdeiros.github.io/Check-Point-Projeto-em-Grupo-Site-da-Vinheria-Agnello/)
+
 ---
 
 ## ✨ Efeitos Visuais
