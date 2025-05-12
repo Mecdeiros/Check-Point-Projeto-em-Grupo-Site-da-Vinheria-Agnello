@@ -70,8 +70,7 @@ O projeto utiliza uma combinação de **pseudo-classes**, **pseudo-elementos**, 
 - Exemplo: barras decorativas sob títulos e efeitos de sublinhado animado.
 
 ### Animações
-- `@keyframes` – Animações suaves de fade-in nas imagens da galeria e banners da página inicial.
-- Efeito visual que dá vida ao conteúdo ao entrar na tela.
+- `@keyframes` – Animações suaves de fade-in nas imagens da página de preparo e banners da página inicial.
 
 ### Transições
 - `transition` – Aplicado em botões e cards de produtos para suavizar mudanças de cor, tamanho e sombra durante a interação.
