@@ -214,3 +214,15 @@ subtitulo da página */
 .legal-terms a:hover {
   color: #007bff;
 }
+
+/* Contato */
+
+input[type="text"]:focus {
+  border-color: blueviolet;
+  background-color: #f0f8ff;
+}
+
+input[type="checkbox"]:checked + label {
+  color: blueviolet;
+  font-weight: bold;
+}
